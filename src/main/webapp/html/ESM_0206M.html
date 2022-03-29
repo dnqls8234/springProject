@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>한국전기안전공사</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- css -->
+	<link type="text/css" rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../plugin/slick-1.8.1/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../plugin/slick-1.8.1/slick/slick-theme.css">
+	<!-- js -->
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/pub_js.js"></script>
+	<script type="text/javascript" src="../plugin/slick-1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <a href="javascript:void(0);" class="util flash" title="플래시켜기"><img src="../images/flash_on.png"></a>
+            <a href="javascript:void(0);" class="util guide_opener" title="가이드열기"><img src="../images/guide.png"></a>
+            <h1>정기점검</h1>
+            <div class="util">
+                <a href="#" class="setting">환경설정</a>
+                <a href="#" class="home">홈</a>
+                <a href="#" class="back">뒤로가기</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>검색</h2>
+                    <div class="sub_util">
+                        <button type="button" class="btn btn_regular btnc_red bold mr5" style="width:64px;">초기화</button>
+                        <button type="button" class="btn btn_regular btnc_main bold" style="width:64px;">조회</button>
+                    </div>
+                </div>
+                <div class="row_area_accordion">
+                    <div class="accordion_area">
+                        <div class="row_area">
+                            <table class="table_type01">
+                                <colgroup>
+                                    <col width="33.33%;">
+                                    <col width="33.33%;">
+                                    <col width="33.33%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <select name="" id="">
+                                                <option selected value="">작업그룹</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="계기번호">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="한전고객번호">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" placeholder="성명">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="상호">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="위치">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" placeholder="새주소">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="지번">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="담당자">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" placeholder="인입주번호">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="전주번호">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="신청번호">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>예정일</th>
+                                        <td colspan="2">
+                                            <div class="cla_box">
+                                                <input type="text" value="20-10-06"><span>~</span><input type="text" value="20-10-06">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="table_accordion off">열기</a>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="row_area">
+                    <table class="table_type02">
+                        <thead>
+                            <tr>
+                                <th>계획</th>
+                                <th>생성</th>
+                                <th>처리</th>
+                                <th>잔여</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>111</td>
+                                <td>100</td>
+                                <td>3</td>
+                                <td>14</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title mini">
+                    <h2>고객목록</h2>
+                    <div class="sub_util">
+                        <button type="button" class="btn btn_regular btnc_main bold"><img src="../images/map_white.png" alt="지도보기"></button>
+                    </div>
+                </div>
+                <div class="row_area">
+                    <div class="ofx_sc">
+                        <table class="table_type02 wauto">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>No</th>
+                                    <th>작업그룹</th>
+                                    <th>번지</th>
+                                    <th>성명</th>
+                                    <th>상호</th>
+                                    <th>계기번호</th>
+                                    <th>위치</th>
+                                    <th>...</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td>10</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="paging">
+                        <ul>
+                            <li>
+                                <a href="#">이전</a>
+                            </li>
+                            <li>
+                                <select name="" id="">
+                                    <option selected value="">1</option>
+                                </select>
+                            </li>
+                            <li>
+                                <a href="#">다음</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_five_btn fixed_bottom">
+                <button type="button" class="btn btn_big btnc_basic">일괄처리</button>
+                <button type="button" class="btn btn_big btnc_light2">전산외생성</button>
+                <button type="button" class="btn btn_big btnc_light bold">전산외삭제</button>
+                <button type="button" class="btn btn_big btnc_main bold">설비입력</button>
+                <button type="button" class="btn btn_big btnc_dark bold">용량계산</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>한국전기안전공사</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- css -->
+	<link type="text/css" rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../plugin/slick-1.8.1/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../plugin/slick-1.8.1/slick/slick-theme.css">
+	<!-- js -->
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/pub_js.js"></script>
+	<script type="text/javascript" src="../plugin/slick-1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <a href="javascript:void(0);" class="util flash" title="플래시켜기"><img src="../images/flash_on.png"></a>
+            <a href="javascript:void(0);" class="util guide_opener" title="가이드열기"><img src="../images/guide.png"></a>
+            <h1>업무통계</h1>
+            <div class="util">
+                <a href="#" class="setting">환경설정</a>
+                <a href="#" class="home">홈</a>
+                <a href="#" class="back">뒤로가기</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content_area">
+                <div class="top_radio">
+                    <input type="radio" name="" value="" id="" class="radio"> <label for="" class="">건수</label>
+                    <input type="radio" name="" value="" id="" class="radio ml10"> <label for="" class="">점수</label>
+                </div>
+                <div class="bottom_double_btn pb0 tab">
+                    <button type="button" class="btn btn_medium btnc_main bold mr10" data-tab="daily">일계</button>
+                    <button type="button" class="btn btn_medium btnc_light2 bold"  data-tab="total">누계</button>
+                </div>
+            </div>
+            <div class="tab_wrap daily" style="display:block;">
+                <div class="content_area">
+                    <div class="row_area pl0 pr0">
+                        <div class="tab_scroll">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="on">정기점검</div>
+                                        </td>
+                                        <td>
+                                            <div>자가용전통시장</div>
+                                        </td>
+                                        <td>
+                                            <div>노후공동주택</div>
+                                        </td>
+                                        <td>
+                                            <div>사용전점검</div>
+                                        </td>
+                                        <td>
+                                            <div>안전진단</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row_area pt0">
+                        <table class="table_type02">
+                            <thead>
+                                <tr>
+                                    <th>계획</th>
+                                    <th>처리</th>
+                                    <th>기타</th>
+                                    <th>잔여</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>111</td>
+                                    <td>100</td>
+                                    <td>3</td>
+                                    <td>14</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="content_area">
+                    <div class="sub_title mini">
+                        <h2>점검</h2>
+                        <div class="sub_util">
+                            <div class="cla_box">
+                                <input style="width:110px; height:25px;" type="text" value="2020-10-06">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row_area">
+                        <div class="ofx_sc">
+                            <table class="table_type02 table_type07">
+                                <tbody>
+                                    <tr>
+                                        <th rowspan="2" class="color_m border_bottom">실시</th>
+                                        <th>적합</th>
+                                        <th>부적합</th>
+                                        <th>누설적합</th>
+                                        <th>누설부적합</th>
+                                        <th class="bold">합계</th>
+                                    </tr>
+                                    <tr>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td class="bold">0</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2" class="color_m border_bottom">사고</th>
+                                        <th>거부</th>
+                                        <th>부재</th>
+                                        <th>전폐</th>
+                                        <th>자가용</th>
+                                        <th class="bold">합계</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td class="bold">10</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2" class="color_m border_bottom">기타</th>
+                                        <th>특수</th>
+                                        <th>주기</th>
+                                        <th>고위치</th>
+                                        <th>대리점검</th>
+                                        <th class="bold">합계</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td class="bold">4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_area">
+                    <div class="sub_title mini">
+                        <h2>시설 개선</h2>
+                    </div>
+                    <div class="row_area">
+                        <table class="table_type07">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th rowspan="2" class="color_m border_bottom">특별</th>
+                                    <th colspan="3">특별</th>
+                                    <th colspan="3">부분</th>
+                                    <th class="bold">합계</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">0</td>
+                                    <td colspan="3">1</td>
+                                    <td class="bold">1</td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2" class="color_m border_bottom">간이</th>
+                                    <th colspan="2">퓨즈</th>
+                                    <th colspan="2">테이핑</th>
+                                    <th colspan="2">조임</th>
+                                    <th class="bold">합계</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">2</td>
+                                    <td colspan="2">3</td>
+                                    <td colspan="2">4</td>
+                                    <td class="bold">9</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="content_area mb10">
+                    <div class="sub_title">
+                        <h2>바로가기</h2>
+                    </div>
+                    <div class="bottom_double_btn pt5 pb5">
+                        <button type="button" class="btn btn_medium btnc_basic bold mr10">일마감</button>
+                        <button type="button" class="btn btn_medium btnc_basic bold">일마감 취소</button>
+                    </div>
+                    <div class="bottom_double_btn">
+                        <button type="button" class="btn btn_medium btnc_basic bold mr10">일마감동기화</button>
+                        <button type="button" class="btn btn_medium btnc_basic bold">점검결과업로드</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab_wrap total">
+                <div class="content_area">
+                    <div class="row_area pl0 pr0">
+                        <div class="tab_scroll">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="on">정기점검</div>
+                                        </td>
+                                        <td>
+                                            <div>자가용전통시장</div>
+                                        </td>
+                                        <td>
+                                            <div>노후공동주택</div>
+                                        </td>
+                                        <td>
+                                            <div>사용전점검</div>
+                                        </td>
+                                        <td>
+                                            <div>안전진단</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row_area pt0">
+                        <table class="table_type02">
+                            <thead>
+                                <tr>
+                                    <th>계획</th>
+                                    <th>처리</th>
+                                    <th>기타</th>
+                                    <th>잔여</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>111</td>
+                                    <td>100</td>
+                                    <td>3</td>
+                                    <td>14</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="content_area">
+                    <div class="sub_title mini">
+                        <h2>점검</h2>
+                    </div>
+                    <div class="row_area">
+                        <div class="ofx_sc">
+                            <table class="table_type02 table_type07">
+                                <tbody>
+                                    <tr>
+                                        <th rowspan="2" class="color_m border_bottom">실시</th>
+                                        <th>적합</th>
+                                        <th>부적합</th>
+                                        <th>누설적합</th>
+                                        <th>누설부적합</th>
+                                        <th class="bold">합계</th>
+                                    </tr>
+                                    <tr>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td class="bold">0</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2" class="color_m border_bottom">사고</th>
+                                        <th>거부</th>
+                                        <th>부재</th>
+                                        <th>전폐</th>
+                                        <th>자가용</th>
+                                        <th class="bold">합계</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td class="bold">10</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2" class="color_m border_bottom">기타</th>
+                                        <th>특수</th>
+                                        <th>주기</th>
+                                        <th>고위치</th>
+                                        <th>대리점검</th>
+                                        <th class="bold">합계</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td class="bold">4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_area">
+                    <div class="sub_title mini">
+                        <h2>시설 개선</h2>
+                    </div>
+                    <div class="row_area">
+                        <table class="table_type07">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th rowspan="2" class="color_m border_bottom">특별</th>
+                                    <th colspan="3">특별</th>
+                                    <th colspan="3">부분</th>
+                                    <th class="bold">합계</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">0</td>
+                                    <td colspan="3">1</td>
+                                    <td class="bold">1</td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2" class="color_m border_bottom">간이</th>
+                                    <th colspan="2">퓨즈</th>
+                                    <th colspan="2">테이핑</th>
+                                    <th colspan="2">조임</th>
+                                    <th class="bold">합계</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">2</td>
+                                    <td colspan="2">3</td>
+                                    <td colspan="2">4</td>
+                                    <td class="bold">9</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="content_area mb10">
+                    <div class="sub_title">
+                        <h2>바로가기</h2>
+                    </div>
+                    <div class="bottom_double_btn pt5 pb5">
+                        <button type="button" class="btn btn_medium btnc_basic bold mr10">일마감</button>
+                        <button type="button" class="btn btn_medium btnc_basic bold">일마감 취소</button>
+                    </div>
+                    <div class="bottom_double_btn">
+                        <button type="button" class="btn btn_medium btnc_basic bold mr10">일마감동기화</button>
+                        <button type="button" class="btn btn_medium btnc_basic bold">점검결과업로드</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

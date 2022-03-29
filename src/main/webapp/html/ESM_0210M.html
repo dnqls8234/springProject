@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>한국전기안전공사</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- css -->
+	<link type="text/css" rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../plugin/slick-1.8.1/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../plugin/slick-1.8.1/slick/slick-theme.css">
+	<!-- js -->
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/pub_js.js"></script>
+	<script type="text/javascript" src="../plugin/slick-1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <a href="javascript:void(0);" class="util flash" title="플래시켜기"><img src="../images/flash_on.png"></a>
+            <a href="javascript:void(0);" class="util guide_opener" title="가이드열기"><img src="../images/guide.png"></a>
+            <h1>정기점검</h1>
+            <div class="util">
+                <a href="#" class="setting">환경설정</a>
+                <a href="#" class="home">홈</a>
+                <a href="#" class="back">뒤로가기</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>검색</h2>
+                    <div class="sub_util">
+                        <button type="button" class="btn btn_regular btnc_red bold mr5" style="width:64px;">초기화</button>
+                        <button type="button" class="btn btn_regular btnc_main bold" style="width:64px;">조회</button>
+                    </div>
+                </div>
+                <div class="row_area_accordion">
+                    <div class="accordion_area">
+                        <div class="row_area">
+                            <table class="table_type01">
+                                <colgroup>
+                                    <col width="33.33%;">
+                                    <col width="33.33%;">
+                                    <col width="33.33%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <select name="" id="">
+                                                <option selected value="">작업그룹</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="계기번호">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="한전고객번호">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" placeholder="성명">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="상호">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="위치">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" placeholder="새주소">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="지번">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="담당자">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" placeholder="인입주번호">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="전주번호">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="신청번호">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>희망일</th>
+                                        <td colspan="2">
+                                            <div class="cla_box">
+                                                <input type="text" value="20-10-06"><span>~</span><input type="text" value="20-10-06">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="table_accordion off">열기</a>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="row_area">
+                    <table class="table_type02">
+                        <thead>
+                            <tr>
+                                <th>계획</th>
+                                <th>생성</th>
+                                <th>처리</th>
+                                <th>잔여</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>111</td>
+                                <td>100</td>
+                                <td>3</td>
+                                <td>14</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title mini">
+                    <h2>고객목록</h2>
+                    <div class="sub_util">
+                        <button type="button" class="btn btn_regular btnc_main bold map_opener"><img src="../images/map_white.png" alt="지도보기"></button>
+                    </div>
+                </div>
+                <div class="row_area">
+                    <div class="paging">
+                        <ul>
+                            <li>
+                                <a href="#">이전</a>
+                            </li>
+                            <li>
+                                <select name="" id="">
+                                    <option selected value="">1</option>
+                                </select>
+                            </li>
+                            <li>
+                                <a href="#">다음</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_five_btn fixed_bottom">
+                <button type="button" class="btn btn_big btnc_basic bold">일괄처리</button>
+                <button type="button" class="btn btn_big btnc_basic bold create_opener">전산외생성</button>
+                <button type="button" class="btn btn_big btnc_light bold">전산외삭제</button>
+                <button type="button" class="btn btn_big btnc_light bold">설비입력</button>
+                <button type="button" class="btn btn_big btnc_dark bold">용량계산</button>
+            </div>
+        </div>
+        
+        <!-- 팝업 -->
+        <div class="popup_bg"></div>
+        <div class="popup_wrap create_popup">
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>전산외 생성</h2>
+                    <div class="sub_util">
+                        <button type="button" class="popup_closer" title="팝업닫기"><img src="../images/close_blue.png" alt="close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row_area">
+                <table class="table_type01">
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>보안등</th>
+                            <td colspan="2">
+                                <select name="" id="">
+                                    <option selected value="">Y</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>생성개수</th>
+                            <td colspan="2">
+                                <input type="text" value="" placeholder="">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bottom_double_btn">
+                <button type="button" class="btn btn_medium btnc_basic bold mr10 popup_closer">닫기</button>
+                <button type="button" class="btn btn_medium btnc_main bold">저장</button>
+            </div>
+        </div>
+        <!-- //팝업 -->
+        
+        <!-- 보안등 Y -->
+        <div class="popup_wrap security_light">
+            <div class="header header_type02">
+                <a href="javascript:void(0);" class="util flash" title="플래시켜기"><img src="../images/flash_on.png"></a>
+                <a href="javascript:void(0);" class="util guide_opener" title="가이드열기"><img src="../images/guide.png"></a>
+                <h1>정기점검<span>B</span><span>80.2</span></h1>
+                <div class="util">
+                    <a href="#" class="setting">환경설정</a>
+                    <a href="#" class="home">홈</a>
+                    <a href="#" class="back">뒤로가기</a>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>고객 기본정보</h2>
+                </div>
+                <div class="row_area_accordion">
+                    <div class="accordion_area" style="height:100%;">
+                        <div class="row_area">
+                            <table class="table_type04">
+                                <colgroup>
+                                    <col width="15%;">
+                                    <col width="15%;">
+                                    <col width="26%;">
+                                    <col width="16%;">
+                                    <col width="15%;">
+                                    <col width="15%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <input type="text" value="" placeholder="한전고객번호" disabled>
+                                        </td>
+                                        <td colspan="2">
+                                            <input type="text" value="" placeholder="구문표" disabled>
+                                        </td>
+                                        <td colspan="2">
+                                            <input type="text" value="" placeholder="계량기번호" disabled>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <input type="text" value="선택된인입주" placeholder="">
+                                        </td>
+                                        <td>
+                                            <input type="text" value="선택된전주번호" placeholder="">
+                                        </td>
+                                        <td>
+                                            <input type="text" value="322" placeholder="">
+                                        </td>
+                                        <td>
+                                            <input type="text" value="600" placeholder="">
+                                        </td>
+                                        <td>
+                                            <input type="text" value="" placeholder="용량">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <input type="text" value="" placeholder="전기공급일" disabled>
+                                        </td>
+                                        <td colspan="2">
+                                            <input class="width_btn_minus" type="text" value="" placeholder="휴대폰번호">
+                                            <button class="call_btn" type="button" title="통화"><img src="../images/call_white.png"></button>
+                                        </td>
+                                        <td colspan="2">
+                                            <input class="width_btn_minus" type="text" value="" placeholder="전화번호">
+                                            <button class="call_btn" type="button" title="통화"><img src="../images/call_white.png"></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <input type="text" value="" placeholder="고객명">
+                                        </td>
+                                        <td colspan="2">
+                                            <input type="text" value="" placeholder="상호">
+                                        </td>
+                                        <td colspan="2">
+                                            <input type="text" value="" placeholder="위치">
+                                        </td>
+                                    </tr>
+                                    <tr class="address_box">
+                                        <th>
+                                            <a href="#">주소<br />검색</a>
+                                        </th>
+                                        <td colspan="3">
+                                            <p>
+                                                <input type="text" value="선택된 주소값 표출" disabled placeholder="구주소">
+                                            </p>
+                                            <p class="mt5">
+                                                <input type="text" value="선택된 주소값 표출" disabled placeholder="새주소">
+                                            </p>
+                                        </td>
+                                        <td colspan="2">
+                                            <p>
+                                                <input type="text" value="선택된번지" placeholder="번지">
+                                            </p>
+                                            <p class="mt5">
+                                                <input type="text" value="선택된건물번호" placeholder="건물번호">
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="text_box">
+                                        <th>
+                                            <span>상시<br/>메모</span>
+                                        </th>
+                                        <td colspan="5">
+                                            <textarea style="height:auto;" name="" id="" cols="30" rows="5"></textarea>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="table_accordion on">접기</a>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>점검 입력</h2>
+                </div>
+                <div class="row_area">
+                    <table class="table_type04">
+                        <tbody>
+                            <tr>
+                                <td colspan="2">
+                                    <input class="tac pl0 pr0" type="text" value="가로신호조명" placeholder="">
+                                </td>
+                                <td colspan="2">
+                                    <input class="tac" type="text" value="도로조명" placeholder="">
+                                </td>
+                                <td colspan="2">
+                                    <input class="tac" type="text" value="보안등" placeholder="">
+                                </td>
+                                <td colspan="2">
+                                    <input class="tac" type="text" value="3년" placeholder="" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="8">
+                                    <input class="width_btn_minus" type="text" value="" placeholder="신청번호">
+                                    <button class="plus_btn" type="button" title="통화"><img src="../images/plus_white.png"></button>
+                                </td>
+                            </tr>
+                            <tr class="tab_pd">
+                                <td>
+                                    <button type="button" class="fs10 btn btn_medium btnc_purple w100p">노후정도</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="fs10 btn btn_medium btnc_purple w100p">설비상태</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="fs10 btn btn_medium btnc_purple w100p">절연저항</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="fs10 btn btn_medium btnc_purple w100p">접지저항</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="fs10 btn btn_medium btnc_purple w100p">누설측정</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="fs10 btn btn_medium btnc_purple w100p">계기지침</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="fs10 btn btn_medium btnc_purple w100p">경미</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="fs10 btn btn_medium btnc_purple w100p">중대</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>설비 사진</h2>
+                    <div class="sub_util">
+                        <button type="button" title="카메라"><img src="../images/camera_blue.png" alt=""></button>
+                        <button type="button" title="갤러리"><img src="../images/gallery_blue.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>열화상 사진</h2>
+                    <div class="sub_util">
+                        <button type="button" title="카메라"><img src="../images/camera_blue.png" alt=""></button>
+                        <button type="button" title="갤러리"><img src="../images/gallery_blue.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_five_btn fixed_bottom">
+                <button type="button" class="btn btn_big btnc_basic bold">복사</button>
+                <button type="button" class="btn btn_big btnc_basic bold">붙이기</button>
+                <button type="button" class="btn btn_big btnc_light bold">이전</button>
+                <button type="button" class="btn btn_big btnc_light bold">다음</button>
+                <button type="button" class="btn btn_big btnc_dark bold">저장</button>
+            </div>
+        </div>
+        <!-- //보안등 Y -->
+        
+        <!-- 보안등 N -->
+        <div class="popup_wrap security_light">
+            <div class="header header_type02">
+                <a href="javascript:void(0);" class="util flash" title="플래시켜기"><img src="../images/flash_on.png"></a>
+                <a href="javascript:void(0);" class="util guide_opener" title="가이드열기"><img src="../images/guide.png"></a>
+                <h1>정기점검<span>B</span><span>80.2</span></h1>
+                <div class="util">
+                    <a href="#" class="setting">환경설정</a>
+                    <a href="#" class="home">홈</a>
+                    <a href="#" class="back">뒤로가기</a>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>고객 기본정보</h2>
+                </div>
+                <div class="row_area_accordion">
+                    <div class="accordion_area" style="height:100%;">
+                        <div class="row_area">
+                            <table class="table_type04">
+                                <colgroup>
+                                    <col width="15%;">
+                                    <col width="15%;">
+                                    <col width="26%;">
+                                    <col width="16%;">
+                                    <col width="15%;">
+                                    <col width="15%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <input type="text" value="" placeholder="한전고객번호" disabled>
+                                        </td>
+                                        <td colspan="2">
+                                            <input type="text" value="" placeholder="구문표" disabled>
+                                        </td>
+                                        <td colspan="2">
+                                            <input type="text" value="" placeholder="계량기번호" disabled>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <input type="text" value="선택된인입주" placeholder="">
+                                        </td>
+                                        <td>
+                                            <input type="text" value="선택된전주번호" placeholder="">
+                                        </td>
+                                        <td>
+                                            <select name="" id="" class="color_b">
+                                                <option selected value="">선식</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="" class="color_b">
+                                                <option selected value="">종별</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" value="" placeholder="용량">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <input type="text" value="" placeholder="전기공급일" disabled>
+                                        </td>
+                                        <td colspan="2">
+                                            <input class="width_btn_minus" type="text" value="" placeholder="휴대폰번호">
+                                            <button class="call_btn" type="button" title="통화"><img src="../images/call_white.png"></button>
+                                        </td>
+                                        <td colspan="2">
+                                            <input class="width_btn_minus" type="text" value="" placeholder="전화번호">
+                                            <button class="call_btn" type="button" title="통화"><img src="../images/call_white.png"></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <input type="text" value="" placeholder="고객명">
+                                        </td>
+                                        <td colspan="2">
+                                            <input type="text" value="" placeholder="상호">
+                                        </td>
+                                        <td colspan="2">
+                                            <input type="text" value="" placeholder="위치">
+                                        </td>
+                                    </tr>
+                                    <tr class="address_box">
+                                        <th>
+                                            <a href="#">주소<br />검색</a>
+                                        </th>
+                                        <td colspan="3">
+                                            <p>
+                                                <input type="text" value="선택된 주소값 표출" disabled placeholder="구주소">
+                                            </p>
+                                            <p class="mt5">
+                                                <input type="text" value="선택된 주소값 표출" disabled placeholder="새주소">
+                                            </p>
+                                        </td>
+                                        <td colspan="2">
+                                            <p>
+                                                <input type="text" value="선택된번지" placeholder="번지">
+                                            </p>
+                                            <p class="mt5">
+                                                <input type="text" value="선택된건물번호" placeholder="건물번호">
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="text_box">
+                                        <th>
+                                            <span>상시<br/>메모</span>
+                                        </th>
+                                        <td colspan="5">
+                                            <textarea style="height:auto;" name="" id="" cols="30" rows="5"></textarea>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="table_accordion on">접기</a>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>점검 입력</h2>
+                </div>
+                <div class="row_area">
+                    <table class="table_type04">
+                        <tbody>
+                            <tr>
+                                <td colspan="2">
+                                    <select name="" id="" class="color_b">
+                                        <option selected value="">대분류</option>
+                                    </select>
+                                </td>
+                                <td colspan="2">
+                                    <select name="" id="" class="color_b">
+                                        <option selected value="">중분류</option>
+                                    </select>
+                                </td>
+                                <td colspan="2">
+                                    <select name="" id="" class="color_b">
+                                        <option selected value="">소분류</option>
+                                    </select>
+                                </td>
+                                <td colspan="2">
+                                    <input class="tac" type="text" value="" placeholder="점검주기" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="8">
+                                    <input class="width_btn_minus" type="text" value="" placeholder="신청번호">
+                                    <button class="plus_btn" type="button" title="통화"><img src="../images/plus_white.png"></button>
+                                </td>
+                            </tr>
+                            <tr class="tab_pd">
+                                <td>
+                                    <button type="button" class="fs10 btn btn_medium btnc_purple w100p">노후정도</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="fs10 btn btn_medium btnc_purple w100p">설비상태</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="fs10 btn btn_medium btnc_purple w100p">절연저항</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="fs10 btn btn_medium btnc_purple w100p">접지저항</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="fs10 btn btn_medium btnc_purple w100p">누설측정</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="fs10 btn btn_medium btnc_purple w100p">계기지침</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="fs10 btn btn_medium btnc_purple w100p">경미</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="fs10 btn btn_medium btnc_purple w100p">중대</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>설비 사진</h2>
+                    <div class="sub_util">
+                        <button type="button" title="카메라"><img src="../images/camera_blue.png" alt=""></button>
+                        <button type="button" title="갤러리"><img src="../images/gallery_blue.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>열화상 사진</h2>
+                    <div class="sub_util">
+                        <button type="button" title="카메라"><img src="../images/camera_blue.png" alt=""></button>
+                        <button type="button" title="갤러리"><img src="../images/gallery_blue.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_five_btn fixed_bottom">
+                <button type="button" class="btn btn_big btnc_basic bold">복사</button>
+                <button type="button" class="btn btn_big btnc_basic bold">붙이기</button>
+                <button type="button" class="btn btn_big btnc_light bold">이전</button>
+                <button type="button" class="btn btn_big btnc_light bold">다음</button>
+                <button type="button" class="btn btn_big btnc_dark bold">저장</button>
+            </div>
+        </div>
+        <!-- //보안등 N -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>한국전기안전공사</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- css -->
+	<link type="text/css" rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../plugin/slick-1.8.1/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../plugin/slick-1.8.1/slick/slick-theme.css">
+	<!-- js -->
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/pub_js.js"></script>
+	<script type="text/javascript" src="../plugin/slick-1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- 팝업 -->
+        <div class="popup_wrap purple_type02" style="display:block;">
+            <div class="content_area">
+                <div class="sub_title box_shadow">
+                    <h2>경미한 부적합 사항</h2>
+                    <div class="sub_util">
+                        <button type="button" class="popup_closer" title="팝업닫기"><img src="../images/close_blue.png" alt="close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>절연저항</h2>
+                </div>
+                <div class="row_area">
+                    <table class="table_type08">
+                        <colgroup>
+                            <col width="65px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test1" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test1" value="" id="chk_test2" checked>
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    전기기계기구의 절연저항이 기준치 미만일 경우
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    정전불가로 절연저항 측정 불능시(누설전류 측정)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>인입구 배선</h2>
+                </div>
+                <div class="row_area">
+                    <table class="table_type08">
+                        <colgroup>
+                            <col width="65px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1" checked>
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    전선길이, 지지점, 이격거리 초과 등 공사방법 미준수
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    접속점 전선노출 및 피복손상
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    인입선, 연접인입선 공사방법 부정적 등
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>상세위치</th>
+                                <td>
+                                    <input class="h26p" type="text" value="" placeholder="">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>누전차단기</h2>
+                </div>
+                <div class="row_area">
+                    <table class="table_type08">
+                        <colgroup>
+                            <col width="65px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    대지전압 150V이하 누전차단기의 동작상태 불량
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    공공의 안전확보를 위해 누전경보장치 설치
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    욕실 등에 시설하는 콘센트회로에 인체 감전보호용 누전차단기 미시설(2004.1.1이전 착공시설)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>상세위치</th>
+                                <td>
+                                    <input class="h26p" type="text" value="" placeholder="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    주택 분기개폐기 누전차단기 미시설(2010.1.5.이전 착공시설)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    경미한 열화 및 손상
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>개폐기 차단기</h2>
+                </div>
+                <div class="row_area">
+                    <table class="table_type08">
+                        <colgroup>
+                            <col width="65px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    주개폐기 미시설시 분기개폐기수 6개 이하
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    분기 개폐기 20A 초과 시설
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    분기회로 미설치
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    중성선에 퓨즈(과전류차단기) 삽입
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    개폐기 차단기 및 퓨즈 용량 과다
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    개폐기 역부착
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    가로등, 보안등 전기설비로서 점검 측정이 불가능한 상태
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    공통접지단자, 러그, 터미널, 부스바 등 노후 및 접속상태 불량
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    경미한 열화 및 손상
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>옥내외 배선</h2>
+                </div>
+                <div class="row_area">
+                    <table class="table_type08">
+                        <colgroup>
+                            <col width="65px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    제어용 배선으로 단면적 1.5mm2미만의 연동선 사용
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    절연전선 사용개소의 전선피복 손상
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    기계기구, 배선기구, 접속기 등의 손상
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    지지물(애자) 이탈 및 벽관통 부분 전선관 미삽입
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    기타 특수설비 전로의 이격거리 미달
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    지중전선, 가공배선, 임시배선 시설방법 부적정
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    동일구내 가공배선으로 비닐코드 사용
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    쇼윈도우, 쇼케이스 배선으로 0.75㎟ 미만의 비닐코드배선 사용
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>접지 상태</h2>
+                </div>
+                <div class="row_area">
+                    <table class="table_type08">
+                        <colgroup>
+                            <col width="65px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    가정용(냉장고, 에어컨, 세탁기 등) 접지 미시설 및 기준치 초과
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    농사용 이동식 기기 접지 미시설 및 기준치 초과
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    네온변압기 외함 접지 미시설 및 기준치 초과
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    접지극부 콘센트 접지 미사용(2004.1.1.이전)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    접지극(동판, 동봉 등) 규격 미달
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    시공방법 부적정
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test1">
+                                        <label for="chk_test1">1</label>
+                                    </div>
+                                    <div class="radio_box_wrap">
+                                        <input type="radio" name="chk_test" value="" id="chk_test2">
+                                        <label for="chk_test2">3</label>
+                                    </div>
+                                </th>
+                                <td>
+                                    욕실 및 화장실 등에 방적형 콘센트 미시설 (2004.1.1이전 착공시설)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="bottom_double_btn pt10">
+                <button type="button" class="btn btn_medium btnc_basic bold mr10 popup_closer">닫기</button>
+                <button type="button" class="btn btn_medium btnc_main bold">저장</button>
+            </div>
+        </div>
+        <!-- //팝업 -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>한국전기안전공사</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- css -->
+	<link type="text/css" rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../plugin/slick-1.8.1/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../plugin/slick-1.8.1/slick/slick-theme.css">
+	<!-- js -->
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/pub_js.js"></script>
+	<script type="text/javascript" src="../plugin/slick-1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <a href="javascript:void(0);" class="util flash" title="플래시켜기"><img src="../images/flash_on.png"></a>
+            <h1>안전진단</h1>
+            <div class="util">
+                <a href="#" class="setting">환경설정</a>
+                <a href="#" class="home">홈</a>
+                <a href="#" class="back">뒤로가기</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>조회</h2>
+                    <div class="sub_util">
+                        <button type="button" class="btn btn_regular btnc_red bold mr5" style="width:64px;">초기화</button>
+                        <button type="button" class="btn btn_regular btnc_main bold" style="width:64px;">조회</button>
+                    </div>
+                </div>
+                <div class="row_area_accordion">
+                    <div class="accordion_area" style="height:100%;">
+                        <div class="row_area">
+                            <table class="table_type01">
+                            <colgroup>
+                                <col width="33.33%;">
+                                <col width="33.33%;">
+                                <col width="33.33%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <select name="" id="">
+                                            <option selected value="">진행상태</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="민원신청번호">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="고객번호">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="고객명">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="상호">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="계기번호">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="text" placeholder="전기설비주소">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="위치">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="input_box">
+                                            <input type="text" value="" placeholder="접수번호"><span>~</span><input type="text" value="" placeholder="접수번호">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <select name="" id="">
+                                            <option selected value="">점검결과</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>접수일</th>
+                                    <td colspan="2">
+                                        <div class="cla_box">
+                                            <input type="text" value="20-10-06"><span>~</span><input type="text" value="20-10-06">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>점검일</th>
+                                    <td colspan="2">
+                                        <div class="cla_box">
+                                            <input type="text" value="20-10-06"><span>~</span><input type="text" value="20-10-06">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="table_accordion on">접기</a>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>고객 목록</h2>
+                    <div class="sub_util">
+                        <button type="button" class="btn btn_regular btnc_main mr10"><img src="../images/send.png" alt="보고서송신"></button>
+                        <button type="button" class="btn btn_regular btnc_main map_opener"><img src="../images/map_white.png" alt="지도보기"></button>
+                    </div>
+                </div>
+                <div class="row_area">
+                    <div class="ofx_sc">
+                        <table class="table_type02 wauto">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>No</th>
+                                    <th>접수일자</th>
+                                    <th>접수번호</th>
+                                    <th>고객번호</th>
+                                    <th>민원신청번호</th>
+                                    <th>성명</th>
+                                    <th>상호</th>
+                                    <th>구주소</th>
+                                    <th>신주소</th>
+                                    <th>위치</th>
+                                    <th>전화번호</th>
+                                    <th>점검결과</th>
+                                    <th>점검원</th>
+                                    <th>점검일</th>
+                                    <th>지정자명</th>
+                                    <th>회계처리</th>
+                                    <th>수금처리</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>2020.02.18</td>
+                                    <td>15670</td>
+                                    <td>44466</td>
+                                    <td>456789</td>
+                                    <td>김해골</td>
+                                    <td>(주)바다낚시</td>
+                                    <td>김포 영등포구 39번지</td>
+                                    <td>장충동 벚꽃로 90</td>
+                                    <td>실외</td>
+                                    <td>031-9999-8888</td>
+                                    <td>합격</td>
+                                    <td>이수영</td>
+                                    <td>2020.03.30</td>
+                                    <td>김튀순</td>
+                                    <td>가능</td>
+                                    <td>불가능</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>2020.02.18</td>
+                                    <td>15670</td>
+                                    <td>44466</td>
+                                    <td>456789</td>
+                                    <td>김해골</td>
+                                    <td>(주)바다낚시</td>
+                                    <td>김포 영등포구 39번지</td>
+                                    <td>장충동 벚꽃로 90</td>
+                                    <td>실외</td>
+                                    <td>031-9999-8888</td>
+                                    <td>합격</td>
+                                    <td>이수영</td>
+                                    <td>2020.03.30</td>
+                                    <td>김튀순</td>
+                                    <td>가능</td>
+                                    <td>불가능</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>2020.02.18</td>
+                                    <td>15670</td>
+                                    <td>44466</td>
+                                    <td>456789</td>
+                                    <td>김해골</td>
+                                    <td>(주)바다낚시</td>
+                                    <td>김포 영등포구 39번지</td>
+                                    <td>장충동 벚꽃로 90</td>
+                                    <td>실외</td>
+                                    <td>031-9999-8888</td>
+                                    <td>합격</td>
+                                    <td>이수영</td>
+                                    <td>2020.03.30</td>
+                                    <td>김튀순</td>
+                                    <td>가능</td>
+                                    <td>불가능</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td>4</td>
+                                    <td>2020.02.18</td>
+                                    <td>15670</td>
+                                    <td>44466</td>
+                                    <td>456789</td>
+                                    <td>김해골</td>
+                                    <td>(주)바다낚시</td>
+                                    <td>김포 영등포구 39번지</td>
+                                    <td>장충동 벚꽃로 90</td>
+                                    <td>실외</td>
+                                    <td>031-9999-8888</td>
+                                    <td>합격</td>
+                                    <td>이수영</td>
+                                    <td>2020.03.30</td>
+                                    <td>김튀순</td>
+                                    <td>가능</td>
+                                    <td>불가능</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="paging">
+                        <ul>
+                            <li>
+                                <a href="#">이전</a>
+                            </li>
+                            <li>
+                                <select name="" id="">
+                                    <option selected value="">1</option>
+                                </select>
+                            </li>
+                            <li>
+                                <a href="#">다음</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pl20 pr20 pb10 fixed_bottom">
+                <button type="button" class="btn btn_medium btnc_main bold w100p">점검입력</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

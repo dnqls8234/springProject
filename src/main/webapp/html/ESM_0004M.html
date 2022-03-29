@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>한국전기안전공사</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- css -->
+	<link type="text/css" rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../plugin/slick-1.8.1/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../plugin/slick-1.8.1/slick/slick-theme.css">
+	<!-- js -->
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/pub_js.js"></script>
+	<script type="text/javascript" src="../plugin/slick-1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <a href="javascript:void(0);" class="util flash" title="플래시켜기"><img src="../images/flash_on.png"></a>
+            <h1>사용전점검</h1>
+            <div class="util">
+                <a href="#" class="setting">환경설정</a>
+                <a href="#" class="home">홈</a>
+                <a href="#" class="back">뒤로가기</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>조회</h2>
+                    <div class="sub_util">
+                        <button type="button" class="btn btn_regular btnc_red bold mr5" style="width:64px;">초기화</button>
+                        <button type="button" class="btn btn_regular btnc_main bold" style="width:64px;">조회</button>
+                    </div>
+                </div>
+                <div class="row_area_accordion">
+                    <div class="accordion_area">
+                        <div class="row_area">
+                            <table class="table_type01">
+                                <colgroup>
+                                    <col width="33.33%;">
+                                    <col width="33.33%;">
+                                    <col width="33.33%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="text" placeholder="접수번호">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="고객명">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="한전고객번호">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" placeholder="상호">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="점검예정자">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="점검자">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" placeholder="시공대표자">
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="시공자 상호">
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option selected value="">취소여부</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select name="" id="">
+                                                <option selected value="">반송 구분</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option selected value="">진행상태</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option selected value="">점검자</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>주소</th>
+                                        <td colspan="2">
+                                            <input type="text" placeholder="서울시 금천구">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>희망일</th>
+                                        <td colspan="2">
+                                            <div class="cla_box">
+                                                <input type="text" value="20-10-06"><span>~</span><input type="text" value="20-10-06">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>접수일</th>
+                                        <td colspan="2">
+                                            <div class="cla_box">
+                                                <input type="text" value="20-10-06"><span>~</span><input type="text" value="20-10-06">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>점검일</th>
+                                        <td colspan="2">
+                                            <div class="cla_box">
+                                                <input type="text" value="20-10-06"><span>~</span><input type="text" value="20-10-06">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="table_accordion off">열기</a>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="pr20 pl20">
+                    <table class="table_type02">
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th class="color_m bold">대상</th>
+                                <th class="color_m bold">처리</th>
+                                <th class="color_m bold">잔여</th>
+                            </tr>
+                            <tr>
+                                <td>111</td>
+                                <td>100</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="sub_title">
+                    <h2>고객 목록</h2>
+                    <div class="sub_util">
+                        <button type="button" class="btn btn_regular btnc_main bold map_opener"><img src="../images/map_white.png" alt="지도보기"></button>
+                    </div>
+                </div>
+                <div class="row_area">
+                    <div class="of_sc" style="max-height:160px;">
+                        <table class="table_type02 wauto">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th class="ft_bold">한전접수취소여부</th>
+                                    <th class="ft_mid">신청호수</th>
+                                    <th class="ft_regular">상태</th>
+                                    <th class="ft_none">확인자</th>
+                                    <th class="ft_none">확인내용</th>
+                                    <th class="ft_none">고객번호</th>
+                                    <th class="ft_none">사업자구분</th>
+                                    <th class="ft_none">점검대상</th>
+                                    <th class="ft_none">점검구분</th>
+                                    <th class="ft_none">공급방식</th>
+                                    <th class="ft_none">전압</th>
+                                    <th class="ft_none">용량</th>
+                                    <th class="ft_none">계약종별</th>
+                                    <th class="ft_none">새주소</th>
+                                    <th class="ft_none">구주소</th>
+                                    <th class="ft_none">상호</th>
+                                    <th class="ft_none">접수번호</th>
+                                    <th class="ft_none">성명</th>
+                                    <th class="ft_none">전화</th>
+                                    <th class="ft_none">접수일자</th>
+                                    <th class="ft_none">시공업체</th>
+                                    <th class="ft_none">시공사전화번호</th>
+                                    <th class="ft_none">점검예정자</th>
+                                    <th class="ft_none">희망일자</th>
+                                    <th class="ft_none">변경사유</th>
+                                    <th class="ft_none">변경메모</th>
+                                    <th class="ft_none">실시일자</th>
+                                    <th class="ft_none">점검자</th>
+                                    <th class="ft_none">취소사유</th>
+                                    <th class="ft_none">취소메모</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box_wrap">
+                                            <input type="checkbox" id="test_chk" class="hide">
+                                            <label for="test_chk"><span class="chk_box"></span></label>
+                                        </div>
+                                    </td>
+                                    <td class="ft_bold">bold</td>
+                                    <td class="ft_mid">mid</td>
+                                    <td class="ft_regular">regular</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                    <td class="ft_none">none</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_double_btn">
+                <button type="button" class="btn btn_medium btnc_main bold mr10">접수취소</button>
+                <button type="button" class="btn btn_medium btnc_main bold">희망일 변경</button>
+            </div>
+        </div>
+        
+        <!-- 팝업 -->
+        <div class="popup_wrap map_popup">
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>지도 보기</h2>
+                    <div class="sub_util">
+                        <button type="button" class="popup_closer" title="팝업닫기"><img src="../images/close_blue.png" alt="close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="row_area pb20">
+                    <div class="map_area">
+                        <img src="../images/test.png" alt="임시">
+                    </div>
+                    <a href="javascript:void(0);" class="map_updown down">내리기</a>
+                </div>
+                <div class="row_area shadow_top">
+                    <h3><span>전체</span>120</h3>
+                    <div class="map_sub_title">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="sub_bg1">적합<span>50</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="sub_bg2">부적합<span>50</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="sub_bg3">부재<span>50</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="sub_bg4">미처리<span>50</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="sub_bg5">전산외<span>50</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="sub_bg6">부/종<span>50</span></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ofy_sc" style="max-height:360px; border-top:1px solid #4966A5; border-bottom:1px solid #4966A5;">
+                        <table class="table_type03 wauto">
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>홍길동 010-1212-2121</span>
+                                        <span>전북 완산구 안전로 111 주택1층</span>
+                                    </td>
+                                    <td><button type="button">상세</button></td>
+                                </tr>
+                                <tr class="map_type1">
+                                    <td>99</td>
+                                    <td>
+                                        <span>홍길동 010-1212-2121</span>
+                                        <span>전북 완산구 안전로 111 주택1층전북 완산구 안전로 111 주택1층</span>
+                                    </td>
+                                    <td><button type="button">상세</button></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <span>홍길동 010-1212-2121</span>
+                                        <span>전북 완산구 안전로 111 주택1층</span>
+                                    </td>
+                                    <td><button type="button">상세</button></td>
+                                </tr>
+                                <tr class="map_type2">
+                                    <td>4</td>
+                                    <td>
+                                        <span>홍길동 010-1212-2121</span>
+                                        <span>전북 완산구 안전로 111 주택1층전북 완산구 안전로 111 주택1층</span>
+                                    </td>
+                                    <td><button type="button">상세</button></td>
+                                </tr>
+                                <tr class="map_type3">
+                                    <td>5</td>
+                                    <td>
+                                        <span>홍길동 010-1212-2121</span>
+                                        <span>전북 완산구 안전로 111 주택1층</span>
+                                    </td>
+                                    <td class="btn_double">
+                                        <button type="button">상세</button>
+                                        <button type="button">임시저장</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>
+                                        <span>홍길동 010-1212-2121</span>
+                                        <span>전북 완산구 안전로 111 주택1층전북 완산구 안전로 111 주택1층</span>
+                                    </td>
+                                    <td><button type="button">상세</button></td>
+                                </tr>
+                                <tr class="map_type4">
+                                    <td>7</td>
+                                    <td>
+                                        <span>홍길동 010-1212-2121</span>
+                                        <span>전북 완산구 안전로 111 주택1층</span>
+                                    </td>
+                                    <td><button type="button">상세</button></td>
+                                </tr>
+                                <tr class="map_type5">
+                                    <td>8</td>
+                                    <td>
+                                        <span>홍길동 010-1212-2121</span>
+                                        <span>전북 완산구 안전로 111 주택1층</span>
+                                    </td>
+                                    <td><button type="button">상세</button></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>
+                                        <span>홍길동 010-1212-2121</span>
+                                        <span>전북 완산구 안전로 111 주택1층</span>
+                                    </td>
+                                    <td><button type="button">상세</button></td>
+                                </tr>
+                                <tr class="map_type6">
+                                    <td>10</td>
+                                    <td>
+                                        <span>홍길동 010-1212-2121</span>
+                                        <span>전북 완산구 안전로 111 주택1층전북 완산구 안전로 111 주택1층</span>
+                                    </td>
+                                    <td><button type="button">상세</button></td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>
+                                        <span>홍길동 010-1212-2121</span>
+                                        <span>전북 완산구 안전로 111 주택1층</span>
+                                    </td>
+                                    <td><button type="button">상세</button></td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>
+                                        <span>홍길동 010-1212-2121</span>
+                                        <span>전북 완산구 안전로 111 주택1층전북 완산구 안전로 111 주택1층</span>
+                                    </td>
+                                    <td><button type="button">상세</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="paging2">
+                        <ul>
+                            <li class="arrow first">
+                                <a href="#">처음으로</a>
+                            </li>
+                            <li class="arrow prev">
+                                <a href="#">이전으로</a>
+                            </li>
+                            <li class="on">
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">5</a>
+                            </li>
+                            <li>
+                                <a href="#">6</a>
+                            </li>
+                            <li>
+                                <a href="#">7</a>
+                            </li>
+                            <li>
+                                <a href="#">8</a>
+                            </li>
+                            <li>
+                                <a href="#">9</a>
+                            </li>
+                            <li>
+                                <a href="#">10</a>
+                            </li>
+                            <li class="arrow next">
+                                <a href="#">처음으로</a>
+                            </li>
+                            <li class="arrow last">
+                                <a href="#">이전으로</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //팝업 -->
+        
+    </div>
+</body>
+</html>

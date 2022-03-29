@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>한국전기안전공사</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- css -->
+	<link type="text/css" rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../plugin/slick-1.8.1/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../plugin/slick-1.8.1/slick/slick-theme.css">
+	<!-- js -->
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/pub_js.js"></script>
+	<script type="text/javascript" src="../plugin/slick-1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <a href="javascript:void(0);" class="util flash" title="플래시켜기"><img src="../images/flash_on.png"></a>
+            <a href="javascript:void(0);" class="util guide_opener" title="가이드열기"><img src="../images/guide.png"></a>
+            <h1>사용전점검</h1>
+            <div class="util">
+                <a href="#" class="setting">환경설정</a>
+                <a href="#" class="home">홈</a>
+                <a href="#" class="back">뒤로가기</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content_area">
+                <div class="row_area">
+                    <table class="table_type04">
+                        <colgroup>
+                            <col width="25%;">
+                            <col width="25%;">
+                            <col width="25%;">
+                            <col width="25%;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn_medium btnc_purple bold w100p">절연저항</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn_medium btnc_purple bold w100p">접지저항</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn_medium btnc_purple bold w100p on">중대부적합</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn_medium btnc_purple bold w100p">다건입력</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row_area">
+                    <table class="table_type04">
+                        <colgroup>
+                            <col width="25%;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr class="border_none">
+                                <th>중대부적합</th>
+                                <td>
+                                    <input class="tac" type="text" value="공사지연" placeholder="" disabled>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- 팝업 -->
+        <div class="popup_wrap purple_type" style="display:block;">
+            <div class="header">
+                <a href="javascript:void(0);" class="util flash" title="플래시켜기"><img src="../images/flash_on.png"></a>
+                <a href="javascript:void(0);" class="util guide_opener" title="가이드열기"><img src="../images/guide.png"></a>
+                <h1>사용전점검</h1>
+                <div class="util">
+                    <a href="#" class="setting">환경설정</a>
+                    <a href="#" class="home">홈</a>
+                    <a href="#" class="back">뒤로가기</a>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="row_area">
+                    <table class="table_type04">
+                        <colgroup>
+                            <col width="25%;">
+                            <col width="25%;">
+                            <col width="25%;">
+                            <col width="25%;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn_medium btnc_purple bold w100p">절연저항</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn_medium btnc_purple bold w100p">접지저항</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn_medium btnc_purple bold w100p on">중대부적합</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn_medium btnc_purple bold w100p">다건입력</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>통지번호</th>
+                                <td colspan="3">
+                                    <input class="tac" type="text" value="201511430002" placeholder="" disabled>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>공사지연</h2>
+                    <div class="sub_util">
+                        <button type="button" class="" title="카메라"><img src="../images/camera_purple.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="row_area">
+                    <ul class="tal">
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>전체미시설</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>일부미시설(옥내외배선)</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>일부미시설(차단기)</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>일부미시설(태양광 추락방지 점검통로)</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>절연저항</h2>
+                    <div class="sub_util">
+                        <button type="button" class="" title="카메라"><img src="../images/camera_purple.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="row_area">
+                    <ul class="tal">
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk2" class="hide" checked>
+                                <label for="test_chk2" class="pl20"><span class="chk_box"></span>기준치 미만</label>
+                            </div>
+                        </li>
+                        <li>
+                            <table class="table_type04">
+                                <colgroup>
+                                    <col width="25%;">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>상세위치</th>
+                                        <td>
+                                            <input class="tac h26p" type="text" value="" placeholder="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>인입구배선</h2>
+                    <div class="sub_util">
+                        <button type="button" class="" title="카메라"><img src="../images/camera_purple.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="row_area">
+                    <ul class="tal">
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk3" class="hide" checked>
+                                <label for="test_chk3" class="pl20"><span class="chk_box"></span>공사방법</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>규격전선미사용</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>전선접속상태</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>전선손상</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>기타</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>누전차단기</h2>
+                    <div class="sub_util">
+                        <button type="button" class="" title="카메라"><img src="../images/camera_purple.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="row_area">
+                    <ul class="tal">
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk3" class="hide" checked>
+                                <label for="test_chk3" class="pl20"><span class="chk_box"></span>미시설</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>동작상태</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>손상</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>오결선</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>인체감전보호용</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>자동복구형</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>용량과대</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>기타</label>
+                            </div>
+                        </li>
+                        <li>
+                            <table class="table_type04">
+                                <colgroup>
+                                    <col width="25%;">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>상세위치</th>
+                                        <td>
+                                            <input class="tac h26p" type="text" value="" placeholder="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>개폐기차단기</h2>
+                    <div class="sub_util">
+                        <button type="button" class="" title="카메라"><img src="../images/camera_purple.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="row_area">
+                    <ul class="tal">
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk3" class="hide" checked>
+                                <label for="test_chk3" class="pl20"><span class="chk_box"></span>미시설</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>손상</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>오결선</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>다선식각극개폐기미시설</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>용량부족/과대</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>배/분전함상태</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>정격차단용량</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>기타</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>옥내외배선</h2>
+                    <div class="sub_util">
+                        <button type="button" class="" title="카메라"><img src="../images/camera_purple.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="row_area">
+                    <ul class="tal">
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk3" class="hide" checked>
+                                <label for="test_chk3" class="pl20"><span class="chk_box"></span>공사방법</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>규격전선미사용</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>전선손상</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>난잡배선</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>비닐코드배선</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>전선허용전류부적정</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>불연성,난연성미사용</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>배선미시공</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>기타</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content_area">
+                <div class="sub_title">
+                    <h2>접지상태</h2>
+                    <div class="sub_util">
+                        <button type="button" class="" title="카메라"><img src="../images/camera_purple.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="row_area">
+                    <ul class="tal">
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk3" class="hide" checked>
+                                <label for="test_chk3" class="pl20"><span class="chk_box"></span>미시설</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>접지시설상태</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>기준치초과</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chk_box_wrap">
+                                <input type="checkbox" id="test_chk" class="hide">
+                                <label for="test_chk" class="pl20"><span class="chk_box"></span>기타</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom_double_btn fixed_bottom pl15 pr15">
+                <button type="button" class="btn btn_medium btnc_basic bold mr10 popup_closer">닫기</button>
+                <button type="button" class="btn btn_medium btnc_main bold">저장</button>
+            </div>
+        </div>
+        <!-- //팝업 -->
+    </div>
+</body>
+</html>
